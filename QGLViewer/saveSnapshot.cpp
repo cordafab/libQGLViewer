@@ -288,18 +288,18 @@ public: ImageInterface(QWidget *parent) : QDialog(parent) { setupUi(this); }
 // Returns false in case of problem.
 bool QGLViewer::saveImageSnapshot(const QString& fileName)
 {
-	static ImageInterface* imageInterface = NULL;
+   static ImageInterface* imageInterface = nullptr;
 
 	if (!imageInterface)
 		imageInterface = new ImageInterface(this);
 
-	imageInterface->imgWidth->setValue(width());
-	imageInterface->imgHeight->setValue(height());
+   imageInterface->imgWidth->setValue(3840);
+   imageInterface->imgHeight->setValue(2160);
 
 	imageInterface->imgQuality->setValue(snapshotQuality());
 
-	if (imageInterface->exec() == QDialog::Rejected)
-		return true;
+   //if (imageInterface->exec() == QDialog::Rejected)
+   //	return true;
 
 	// Hide closed dialog
 	qApp->processEvents();

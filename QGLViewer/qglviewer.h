@@ -497,7 +497,7 @@ public Q_SLOTS:
 	bool openSnapshotFormatDialog();
 	void snapshotToClipboard();
 
-private:
+public:
 	bool saveImageSnapshot(const QString& fileName);
 
 #ifndef DOXYGEN

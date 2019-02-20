@@ -1,6 +1,6 @@
 CONFIG       += ordered
 TEMPLATE      = subdirs
-SUBDIRS       = QGLViewer examples designerPlugin
+SUBDIRS       = QGLViewer
 
 QT_VERSION=$$[QT_VERSION]
 
